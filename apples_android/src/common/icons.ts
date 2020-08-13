@@ -1,0 +1,17 @@
+export const Icons = {
+  phone: require('../../assets/icons/phone.png'),
+  computer: require('../../assets/icons/computer.png'),
+  clock: require('../../assets/icons/clock.png'),
+  mouse: require('../../assets/icons/mouse.png'),
+  arrows: require('../../assets/icons/arrows.png'),
+  gamepad: require('../../assets/icons/gamepad.png'),
+  dumble: require('../../assets/icons/dumble.png'),
+  gift: require('../../assets/icons/gift.png'),
+  headPhones: require('../../assets/icons/headPhones.png'),
+  home: require('../../assets/icons/home.png'),
+  powerBank: require('../../assets/icons/powerBank.png'),
+  tv: require('../../assets/icons/tv.png'),
+  call: require('../../assets/icons/call.png'),
+  google: require('../../assets/icons/google.png'),
+  arrow_right: require('../../assets/icons/arrow_right.png'),
+}

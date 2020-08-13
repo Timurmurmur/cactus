@@ -1,17 +1,17 @@
 {
   "expo": {
-    "name": "Apple",
-    "slug": "Apple",
+    "name": "cactus",
+    "slug": "cactus",
     "platforms": [
       "ios",
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash_apple.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,12 +22,15 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "host.exp.apple",
-      "buildNumber": "1.0.0"
+      "supportsTablet": true
     },
     "android": {
-      "package": "host.exp.apple",
-      "versionCode": 1
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAOr2st31-EF0qlUhk38KM0nv_kIkkLnLY"
+        }
+      },
+      "package": "com.cactus.shop"
     }
   }
 }

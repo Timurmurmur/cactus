@@ -1,0 +1,14 @@
+export const COLOR = {
+  WHITE: '#fff',
+  BLACK: '#3A3A3C',
+  GREEN: '#149751',
+  ORANGE: '#FF7C0A',
+  GRAY:'#E5E5E5',
+  NAV_HEADER: '#2C3A47',
+  ICONGRAY: '#C5C6C7',
+  BLUE: '#3BB3E3',
+  TEXT_GRAY: '#A8A8A8',
+  LIGHT_GREEN: '#34C678',
+  COMP_BG: '#F9F9F9',
+  TINT_COLOR: "#60B6FF"
+}
