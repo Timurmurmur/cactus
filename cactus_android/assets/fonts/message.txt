@@ -1,0 +1,82 @@
+{
+ "user_add_id": "D6953E8A-50B6-11E2-9EC4-C86000DF0D7B",
+ "object_id": "",
+ "seats": 1,
+ "guest_id": "7691BFE2-1EEE-46D2-AA95-4C6537B6E232",
+ "delivery_address": "test,test,test,,,,",
+ "delivery_last_name": "Test",
+ "delivery_first_name": "Test",
+ "delivery_phone": "71111111111",
+ "delivery_info": "test for api",
+ "delivery_client_sum": 111,
+ "items": [
+    {
+     "product_id": "17FC675C-24AB-11EA-812E-001E4F440A4A",
+     "menu_id": "0935DDFE-10FE-11EA-812B-001E4F440A4C",
+     "price": 160,
+     "count": 1,
+     "sum": 160,
+     "total_sum": 160,
+     "comment": "test",
+     "product_name": "Пиво Белый эль Мохнатый шмель белое нефильтрованое 0,5л",
+     "product_shortname": "",
+     "user_add_id": "D6953E8A-50B6-11E2-9EC4-C86000DF0D7B"
+   }
+ ]
+}
+вот такой заказ я отправил в их api
+{
+      "id": "8F3B3FC9-BDFB-4245-9945-00031C83BFD8",
+     "user_add_id": "D6953E8A-50B6-11E2-9EC4-C86000DF0D7B",
+     "num": 214,
+     "date_add": "2020.05.07 13:12:27.443",
+     "date_changes": "2020.05.07 13:12:27.443",
+     "date_precheck": "",
+     "prefix_db": "",
+     "date_reservation": "",
+     "fio_reservation": "",
+     "info_reservation": "",
+     "prepayment_card": "",
+     "prepayment_sum": 0,
+     "object_id": "",
+     "seats": 1,
+     "status": "open",
+     "origin": "unknown",
+     "label": 0,
+     "card_id": "",
+     "discount_percent": 0,
+     "discount_sum": 0,
+     "guest_id": "7691BFE2-1EEE-46D2-AA95-4C6537B6E232",
+     "ispaid_delivery": false,
+     "delivery_address": "test,test,test,,,,",
+     "delivery_last_name": "Test",
+     "delivery_first_name": "Test",
+     "delivery_patronymic": "",
+     "delivery_phone": "71111111111",
+     "delivery_phone2": "",
+     "delivery_zone_id": "",
+     "date_ready": "",
+     "date_delivery": "",
+     "delivery_info": "test for api",
+     "delivery_client_sum": 111,
+     "timestamp": "2020.05.07 13:12:27.443",
+     "delivery_status": "none",
+     "delivery_cancel_id": "",
+     "active": true,
+     "status_int": 1,
+     "prechk_user_id": "",
+     "avans_sum": 0,
+     "disk_val": 0,
+     "disk_id": "",
+     "coursed": false
+   }
+вот такой заказ он создал
+спроси пожалуйста
+что писать в поля
+prefix_db, origin, delivery_zone_id,delivery_status
+и может еще какие нужно заполнять
+еще в итемах заказ есть tax_id
+что это вообще хз
+но оно у них заполненно
+тоже хотелось бы знать
+воооот

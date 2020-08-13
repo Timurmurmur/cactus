@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Apple",
+    "slug": "Apple",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash_apple.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "host.exp.apple",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "host.exp.apple",
+      "versionCode": 1
+    }
+  }
+}

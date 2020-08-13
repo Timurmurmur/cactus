@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "apples",
+    "slug": "apples",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.demmel.apples",
+      "buildNumber": "1.0.2.3",
+      "config": {
+        "googleMapsApiKey": "AIzaSyA-1kIPq78ffzvjy5vqjlW9zNz5ELGSq6Y"
+      }
+    }
+  }
+}
