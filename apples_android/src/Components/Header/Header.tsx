@@ -29,7 +29,7 @@ export class Header extends React.Component<IHeaderProps, IHeaderState>{
     return(
       <View style={[HeaderStyles.wrapper]}>
         <View style={{ maxWidth: 35 }}>
-          <Ionicons.Button name="ios-menu" size={40} iconStyle={{ color: COLOR.BLACK, marginRight: -5 }} backgroundColor="transparent" underlayColor={COLOR.GREEN} onPress={(e: any) => {this.props.navigation.openDrawer()}}/>
+          <Ionicons.Button name="ios-menu" size={40} iconStyle={{ color: COLOR.BLACK, marginRight: -5 }} backgroundColor="transparent" underlayColor={COLOR.TINT_COLOR} onPress={(e: any) => {this.props.navigation.openDrawer()}}/>
         </View>
         <View style={{ position: 'relative', width: '75%'}}>
           <View 

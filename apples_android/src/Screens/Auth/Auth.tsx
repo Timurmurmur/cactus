@@ -54,7 +54,7 @@ export class Auth extends React.Component<IAuthProps, IAuthState> {
       <ScrollView style={{backgroundColor: COLOR.WHITE}}>
         <View style={AuthStyle.container}>
           <View style={AuthStyle.goBack}>
-            <Ionicons.Button onPress={() => this.props.navigation.goBack()}  name="md-arrow-round-back" size={30} underlayColor="#fff" color={COLOR.GREEN} backgroundColor={'transparent'}/>
+            <Ionicons.Button onPress={() => this.props.navigation.goBack()}  name="md-arrow-round-back" size={30} underlayColor="#fff" color={COLOR.TINT_COLOR} backgroundColor={'transparent'}/>
           </View>
           <View style={AuthStyle.titleWrapper}>
             <Text style={AuthStyle.title}>Телефон</Text>
@@ -76,7 +76,7 @@ export class Auth extends React.Component<IAuthProps, IAuthState> {
               keyboardType="phone-pad"
               ref={(ref) => this.phoneRef = ref}/>
             <Text style={{color: COLOR.TEXT_GRAY, fontSize: 12, marginTop: 10}}>При авторизации или регистрации Вы соглашаетесь с </Text>
-            <Text style={{fontSize: 12, color: COLOR.GREEN}}>Политикой конфиденциальности</Text>
+            <Text style={{fontSize: 12, color: COLOR.TINT_COLOR}}>Политикой конфиденциальности</Text>
           </View>
           <View>
             {/* <Button title="ДАЛЕЕ" onPress={(e) => {this.props.navigation.navigate("SmsVerification")}} disabled={!this.state.phoneValid} styles={{backgroundColor: COLOR.GREEN}} textStyle={{color: COLOR.WHITE}}/> */}

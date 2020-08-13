@@ -64,34 +64,34 @@ export class StackHeader extends React.Component<IHeaderProps, IHeaderState>{
       //   </View>
       //   }
       // </View>
-      <View style={{height: 60, flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 16, backgroundColor: COLOR.GREEN, alignItems: 'center', width: '100%'}}>
+      <View style={{height: 60, flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 16, backgroundColor: COLOR.WHITE, alignItems: 'center', width: '100%'}}>
       { showSearch ? 
           <>
             <View style={{ position: 'absolute', flexDirection: 'row', left: 16, right: 16, backgroundColor: COLOR.WHITE, zIndex: 1000, borderRadius: 3, height: 45, alignItems: 'center'}}>
-              <AntDesign.Button name="arrowleft" size={28} iconStyle={{ color: COLOR.GREEN,  }} backgroundColor="transparent" underlayColor={COLOR.WHITE} onPress={(e: any) => this.showSearchHandler(e)}/>
+              <AntDesign.Button name="arrowleft" size={28} iconStyle={{ color: COLOR.TINT_COLOR,  }} backgroundColor="transparent" underlayColor={COLOR.WHITE} onPress={(e: any) => this.showSearchHandler(e)}/>
               <Input placeholder="Поиск по товарам" styles={HeaderStyles.header_input} placeholderColor={COLOR.TEXT_GRAY}/>
             </View>
           </> :
           <>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <View style={{ width: 40, marginRight: 20}}>
-                { this.state.showSearch === undefined ? <Ionicons.Button name="ios-menu" size={40} iconStyle={{ color: COLOR.WHITE}} backgroundColor="transparent" underlayColor={COLOR.GREEN} onPress={(e) => {this.props.navigation.openDrawer()}}/>
+                { this.state.showSearch === undefined ? <Ionicons.Button name="ios-menu" size={40} iconStyle={{ color: COLOR.WHITE}} backgroundColor="transparent" underlayColor={COLOR.TINT_COLOR} onPress={(e) => {this.props.navigation.openDrawer()}}/>
                       :
-                <AntDesign.Button name="arrowleft" size={30} iconStyle={{ color: COLOR.WHITE, marginRight: -5}} backgroundColor="transparent" underlayColor={COLOR.GREEN} onPress={(e) => this.props.navigation.goBack()}/>}
+                <AntDesign.Button name="arrowleft" size={30} iconStyle={{ color: COLOR.BLACK, marginRight: -5}} backgroundColor="transparent" underlayColor={COLOR.TINT_COLOR} onPress={(e) => this.props.navigation.goBack()}/>}
               </View>
               <View style={{flexDirection: 'row'}}>
-                <Text style={{ fontSize: 19, color: COLOR.WHITE, fontWeight: 'bold', letterSpacing: .5, textAlign: 'left'}}>{this.state.title}</Text>
+                <Text style={{ fontSize: 19, color: COLOR.BLACK, fontWeight: 'regular', letterSpacing: .5, textAlign: 'left', textTransform: 'uppercase'}}>{this.state.title}</Text>
               </View>
             </View>
             <View style={{flexDirection: 'row', width: 80}}>
               <View style={{width: 40}}>
-                <Feather name="search" size={25} style={{color: COLOR.WHITE}} onPress={this.showSearchHandler}/>
+                <Feather name="search" size={25} style={{color: COLOR.BLACK}} onPress={this.showSearchHandler}/>
               </View>
               <View style={{position: 'relative', width: 40}}>
-                <View style={{position: 'absolute',backgroundColor: COLOR.ORANGE, width: 17, height: 17,borderRadius: 50, justifyContent: 'center', alignItems: 'center', zIndex: 80, top: -5, right: 10}}>
+                <View style={{position: 'absolute',backgroundColor: COLOR.TINT_COLOR, width: 17, height: 17,borderRadius: 50, justifyContent: 'center', alignItems: 'center', zIndex: 80, top: -5, right: 10}}>
                   <Text style={{fontSize: 10, color: COLOR.WHITE, fontWeight: 'bold', fontFamily: 'Roboto'}}>3</Text>
                 </View>
-                <ShoppingCardIcon color={"#fff"} width={25} height={25} onPress={(e) => { this.props.navigation.navigate("MainNavigation", { screen: "BasketNavigation", initial: false })}} underlayColor={'transparent'}/>
+                <ShoppingCardIcon color={"#000"} width={25} height={25} onPress={(e) => { this.props.navigation.navigate("MainNavigation", { screen: "BasketNavigation", initial: false })}} underlayColor={'transparent'}/>
               </View>
             </View>
           </>
