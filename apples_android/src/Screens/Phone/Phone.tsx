@@ -94,7 +94,7 @@ export class Phone extends React.Component<IPhoneProps, IPhoneState> {
         </View>
         <View style={{flexDirection: 'row', justifyContent: 'space-between', marginTop: 5}}>
           <Text style={{fontSize: 14, color: COLOR.TEXT_GRAY}}>Код: 653220</Text>
-          <Text style={{fontSize: 12, color: COLOR.LIGHT_GREEN}}>В наличии</Text>
+          <Text style={{fontSize: 12, color: COLOR.TINT_COLOR}}>В наличии</Text>
         </View>
         </View>
       </View>
@@ -102,7 +102,7 @@ export class Phone extends React.Component<IPhoneProps, IPhoneState> {
         <View style={{width: '100%', position: 'relative'}}>
           <View style={[{backgroundColor: COLOR.WHITE, position: 'relative', marginTop: 77, marginBottom: 25}, commonstyles.shadowCardItem]}>
             <View style={{height: 330, padding: 30}}>
-              <Swiper autoplay={true} showsButtons={false} autoplayTimeout={3} activeDotColor={COLOR.LIGHT_GREEN} paginationStyle={{bottom: 0}}>
+              <Swiper autoplay={true} showsButtons={false} autoplayTimeout={3} activeDotColor={COLOR.TINT_COLOR} paginationStyle={{bottom: 0}}>
                 <View style={{width: '100%', justifyContent: 'center', alignItems: 'center'}}>
                   <Image source={require('../../../assets/images/phone.png')} style={{width: 177, height: 242}}/>
                 </View>
@@ -205,7 +205,7 @@ export class Phone extends React.Component<IPhoneProps, IPhoneState> {
                 </View>
               </View>
               <View style={{padding: 18, alignItems: 'flex-end'}}>
-                <TouchableHighlight underlayColor={COLOR.WHITE} onPress={e => { this.props.navigation.navigate('Characters') }}><Text style={{color: COLOR.LIGHT_GREEN, textTransform: 'uppercase'}}>Подробнее</Text></TouchableHighlight>
+                <TouchableHighlight underlayColor={COLOR.WHITE} onPress={e => { this.props.navigation.navigate('Characters') }}><Text style={{color: COLOR.TINT_COLOR, textTransform: 'uppercase'}}>Подробнее</Text></TouchableHighlight>
               </View>
             </View>
           </View>

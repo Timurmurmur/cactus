@@ -5,6 +5,8 @@ import { Feather, FontAwesome } from '@expo/vector-icons';
 import { COLOR } from '../../common/colors';
 import { commonstyles } from '../../common/styles';
 import { LinearGradient } from 'expo-linear-gradient';
+import { Ionicons } from '@expo/vector-icons';
+import { HeaderStyles } from '../../Components/Header/StackHeader';
 
 export interface IStocksProps {}
 interface IStocksState {}
@@ -18,6 +20,15 @@ export class Stocks extends React.Component<IStocksProps, IStocksState> {
 
   render() {
     return(
+      <View>
+      <View style={[HeaderStyles.wrapper, { paddingHorizontal: 16 }]}>
+      <View style={{ flex: 1, maxWidth: 35, marginRight: 20, zIndex: 30 }}>
+      <Ionicons.Button name="ios-menu" size={40} iconStyle={{ color: '#000', marginRight: -5}} backgroundColor="transparent" underlayColor={COLOR.TINT_COLOR} onPress={(e) => {this.props.navigation.openDrawer()}}/>
+      </View>
+      <View style={{flex: 5}}>
+        <Text style={{ fontSize: 19, color: COLOR.BLACK, fontWeight: 'regular', letterSpacing: .5}}>АКЦИИ</Text>
+      </View>
+    </View>
       <ScrollView style={{backgroundColor: '#F7F7F7'}}>
         <View style={{padding: 16}}>
           <View onTouchStart={e => this.props.navigation.navigate('MainNavigation', { screen: 'CurrentStock' })} style={[commonstyles.shadow,{backgroundColor: COLOR.WHITE, borderRadius: 2,overflow: 'hidden', marginBottom: 16}]}>
@@ -38,8 +49,8 @@ export class Stocks extends React.Component<IStocksProps, IStocksState> {
             <View style={{padding: 15}}>
               <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 15}}>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                  <View style={{width: 20, height: 20, backgroundColor: COLOR.ORANGE, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 15}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
-                  <View style={{padding: 8, backgroundColor: COLOR.LIGHT_GREEN, borderRadius: 3}}><Text style={{color: COLOR.WHITE, fontSize: 10}}>СКИДКА</Text></View>
+                  <View style={{width: 20, height: 20, backgroundColor: COLOR.TINT_COLOR, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 8}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
+                  <Text style={{color: COLOR.TINT_COLOR, fontSize: 12}}>СКИДКА</Text>
                 </View>
                 <View>
                   <Text style={{color: COLOR.TEXT_GRAY, fontSize: 12}}>еще 12 дней</Text>
@@ -68,8 +79,8 @@ export class Stocks extends React.Component<IStocksProps, IStocksState> {
             <View style={{padding: 15}}>
               <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 15}}>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                  <View style={{width: 20, height: 20, backgroundColor: COLOR.ORANGE, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 15}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
-                  <View style={{padding: 8, backgroundColor: COLOR.LIGHT_GREEN, borderRadius: 3}}><Text style={{color: COLOR.WHITE, fontSize: 10}}>СКИДКА</Text></View>
+                  <View style={{width: 20, height: 20, backgroundColor: COLOR.TINT_COLOR, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 8}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
+                  <Text style={{color: COLOR.TINT_COLOR, fontSize: 12}}>СКИДКА</Text>
                 </View>
                 <View>
                   <Text style={{color: COLOR.TEXT_GRAY, fontSize: 12}}>еще 12 дней</Text>
@@ -98,8 +109,8 @@ export class Stocks extends React.Component<IStocksProps, IStocksState> {
             <View style={{padding: 15}}>
               <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 15}}>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                  <View style={{width: 20, height: 20, backgroundColor: COLOR.ORANGE, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 15}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
-                  <View style={{padding: 8, backgroundColor: COLOR.LIGHT_GREEN, borderRadius: 3}}><Text style={{color: COLOR.WHITE, fontSize: 10}}>СКИДКА</Text></View>
+                  <View style={{width: 20, height: 20, backgroundColor: COLOR.TINT_COLOR, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 8}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
+                  <Text style={{color: COLOR.TINT_COLOR, fontSize: 10}}>СКИДКА</Text>
                 </View>
                 <View>
                   <Text style={{color: COLOR.TEXT_GRAY, fontSize: 12}}>еще 12 дней</Text>
@@ -112,6 +123,7 @@ export class Stocks extends React.Component<IStocksProps, IStocksState> {
           </View>
         </View>
       </ScrollView>
+      </View>
     )
   }
 }

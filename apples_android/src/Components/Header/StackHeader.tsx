@@ -103,7 +103,7 @@ export class StackHeader extends React.Component<IHeaderProps, IHeaderState>{
 
 export const HeaderStyles = StyleSheet.create({
   wrapper: { 
-    backgroundColor: COLOR.GREEN,
+    backgroundColor: COLOR.WHITE,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',

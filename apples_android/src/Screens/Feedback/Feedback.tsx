@@ -22,10 +22,10 @@ export class Feedback extends React.Component<IFeedbackProps, IFeedbackState> {
       <View style={{}}>
         <View style={[HeaderStyles.wrapper, { paddingHorizontal: 16 }]}>
           <View style={{ flex: 1, maxWidth: 35, marginRight: 20, zIndex: 30 }}>
-          <Ionicons.Button name="ios-menu" size={40} iconStyle={{ color: '#fff', marginRight: -5}} backgroundColor="transparent" underlayColor={COLOR.GREEN} onPress={(e) => {this.props.navigation.openDrawer()}}/>
+          <Ionicons.Button name="ios-menu" size={40} iconStyle={{ color: '#000', marginRight: -5}} backgroundColor="transparent" underlayColor={COLOR.TINT_COLOR} onPress={(e) => {this.props.navigation.openDrawer()}}/>
           </View>
           <View style={{flex: 5}}>
-            <Text style={{ fontSize: 19, color: COLOR.WHITE, fontWeight: 'bold', letterSpacing: .5}}>Служба поддержки</Text>
+            <Text style={{ fontSize: 19, color: COLOR.BLACK, fontWeight: 'regular', letterSpacing: .5, textTransform: 'uppercase'}}>Служба поддержки</Text>
           </View>
         </View>
         <View>
