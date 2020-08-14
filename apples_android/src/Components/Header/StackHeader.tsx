@@ -88,7 +88,7 @@ export class StackHeader extends React.Component<IHeaderProps, IHeaderState>{
                 <Feather name="search" size={25} style={{color: COLOR.BLACK}} onPress={this.showSearchHandler}/>
               </View>
               <View style={{position: 'relative', width: 40}}>
-                <View style={{position: 'absolute',backgroundColor: COLOR.TINT_COLOR, width: 17, height: 17,borderRadius: 50, justifyContent: 'center', alignItems: 'center', zIndex: 80, top: -5, right: 10}}>
+                <View style={{position: 'absolute',backgroundColor: COLOR.TINT_COLOR, width: 17, height: 17,borderRadius: 50, justifyContent: 'center', alignItems: 'center', zIndex: 80, top: 8, right: 7}}>
                   <Text style={{fontSize: 10, color: COLOR.WHITE, fontWeight: 'bold', fontFamily: 'Roboto'}}>3</Text>
                 </View>
                 <ShoppingCardIcon color={"#000"} width={25} height={25} onPress={(e) => { this.props.navigation.navigate("MainNavigation", { screen: "BasketNavigation", initial: false })}} underlayColor={'transparent'}/>

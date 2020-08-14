@@ -35,8 +35,8 @@ export class Notification extends React.Component<INotificationProps, INotificat
           </View>
           <View style={{flexDirection: 'row', alignItems: 'center', marginBottom: 15}}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
-              <View style={{width: 20, height: 20, backgroundColor: COLOR.ORANGE, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 15}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
-              <View style={{padding: 8, backgroundColor: COLOR.LIGHT_GREEN, borderRadius: 3}}><Text style={{color: COLOR.WHITE, fontSize: 10}}>СКИДКА</Text></View>
+              <View style={{width: 20, height: 20, backgroundColor: COLOR.TINT_COLOR, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 15}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
+              <Text style={{color: COLOR.TINT_COLOR, fontSize: 12}}>СКИДКА</Text>
             </View>
             <View>
               <Text style={{color: COLOR.TEXT_GRAY, fontSize: 12, marginLeft: 10}}>22.02.2020 15:12</Text>
@@ -64,8 +64,8 @@ export class Notification extends React.Component<INotificationProps, INotificat
           </View>
           <View style={{flexDirection: 'row', alignItems: 'center', marginBottom: 15}}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
-              <View style={{width: 20, height: 20, backgroundColor: COLOR.ORANGE, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 15}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
-              <View style={{padding: 8, backgroundColor: COLOR.LIGHT_GREEN, borderRadius: 3}}><Text style={{color: COLOR.WHITE, fontSize: 10}}>СКИДКА</Text></View>
+              <View style={{width: 20, height: 20, backgroundColor: COLOR.TINT_COLOR, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 15}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
+              <Text style={{color: COLOR.TINT_COLOR, fontSize: 12}}>СКИДКА</Text>
             </View>
             <View>
               <Text style={{color: COLOR.TEXT_GRAY, fontSize: 12, marginLeft: 10}}>22.02.2020 15:12</Text>
@@ -93,8 +93,8 @@ export class Notification extends React.Component<INotificationProps, INotificat
           </View>
           <View style={{flexDirection: 'row', alignItems: 'center', marginBottom: 15}}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
-              <View style={{width: 20, height: 20, backgroundColor: COLOR.ORANGE, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 15}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
-              <View style={{padding: 8, backgroundColor: COLOR.LIGHT_GREEN, borderRadius: 3}}><Text style={{color: COLOR.WHITE, fontSize: 10}}>СКИДКА</Text></View>
+              <View style={{width: 20, height: 20, backgroundColor: COLOR.TINT_COLOR, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 15}}><Text style={{color: COLOR.WHITE, fontWeight: 'bold'}}>%</Text></View>
+              <Text style={{color: COLOR.TINT_COLOR, fontSize: 12}}>СКИДКА</Text>
             </View>
             <View>
               <Text style={{color: COLOR.TEXT_GRAY, fontSize: 12, marginLeft: 10}}>22.02.2020 15:12</Text>
@@ -127,7 +127,7 @@ export class Notification extends React.Component<INotificationProps, INotificat
           <Text style={{textAlign: 'center', color: COLOR.TEXT_GRAY}}>Для того, чтобы получать уведомления, активируйте их</Text>
         </View>
         <View style={{paddingHorizontal: 16, marginTop: 200}}>
-          <Button styles={{backgroundColor: COLOR.GREEN}} title="Активировать" textStyle={{textTransform: 'uppercase', color: COLOR.WHITE}}></Button>
+          <Button styles={{backgroundColor: COLOR.TINT_COLOR}} title="Активировать" textStyle={{textTransform: 'uppercase', color: COLOR.WHITE}}></Button>
         </View>
       </View>}
       </ScrollView>

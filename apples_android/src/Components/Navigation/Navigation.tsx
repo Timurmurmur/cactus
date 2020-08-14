@@ -228,8 +228,8 @@ class OrderNavigation extends React.Component {
       <OrderNav.Navigator  swipeEnabled tabBarOptions={{
         activeTintColor: COLOR.WHITE,
         scrollEnabled: true,
-        style: {backgroundColor: COLOR.GREEN},
-        pressColor: COLOR.LIGHT_GREEN,
+        style: {backgroundColor: COLOR.TINT_COLOR},
+        pressColor: COLOR.BLUE,
         tabStyle: {
           marginVertical: 8,
           maxWidth: 150
@@ -237,7 +237,7 @@ class OrderNavigation extends React.Component {
         labelStyle: {
           color: COLOR.WHITE,
           fontSize: 14,
-          fontWeight: 'bold'
+          fontWeight: 'normal'
         },
         indicatorStyle: {
           backgroundColor: COLOR.WHITE
@@ -310,8 +310,8 @@ class MaterialTopTab extends React.Component {
       <TopTabNavigator.Navigator  swipeEnabled tabBarOptions={{
         activeTintColor: COLOR.WHITE,
         scrollEnabled: true,
-        style: {backgroundColor: COLOR.GREEN},
-        pressColor: COLOR.LIGHT_GREEN,
+        style: {backgroundColor: COLOR.TINT_COLOR},
+        pressColor: COLOR.BLUE,
         tabStyle: {
           marginVertical: 8,
           width: 120
@@ -319,7 +319,7 @@ class MaterialTopTab extends React.Component {
         labelStyle: {
           color: COLOR.WHITE,
           fontSize: 14,
-          fontWeight: 'bold'
+          fontWeight: 'normal'
         },
         indicatorStyle: {
           backgroundColor: COLOR.WHITE

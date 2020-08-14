@@ -42,7 +42,7 @@ export class Orders extends React.Component<IOrdersProps, IOrdersState> {
               <Text style={{textAlign: 'center', color: COLOR.TEXT_GRAY}}>Давайте исправим это!{'\n'}Сделайте первую покупку в Кактусе прямо сейчас.</Text>
             </View>
             <View>
-              <Button title="ПЕРЕЙТИ В КАТАЛОГ" styles={{backgroundColor: COLOR.GREEN}} textStyle={{color: COLOR.WHITE}}/>
+              <Button title="ПЕРЕЙТИ В КАТАЛОГ" styles={{backgroundColor: COLOR.TINT_COLOR}} textStyle={{color: COLOR.WHITE}}/>
             </View>
           </View>
         </View>

@@ -78,8 +78,8 @@ export class Bonus extends React.Component<IBonusProps, IBonusState> {
             <View style={{padding: 16}}>
               <TouchableHighlight underlayColor={COLOR.WHITE} onPress={e => this.modalVisibilityHandler(e)}>
                 <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
-                  <Text style={{color: COLOR.LIGHT_GREEN, fontSize: 14}}>Как получить бонусы?</Text>
-                  <AntDesign name="right" size={16} color={COLOR.LIGHT_GREEN}/>
+                  <Text style={{color: COLOR.TINT_COLOR, fontSize: 14}}>Как получить бонусы?</Text>
+                  <AntDesign name="right" size={16} color={COLOR.TINT_COLOR}/>
                 </View>
               </TouchableHighlight>
             </View>
