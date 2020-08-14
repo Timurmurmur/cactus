@@ -4,7 +4,7 @@ import { TextInput, StyleSheet, KeyboardType } from 'react-native';
 interface IInputProps{
   placeholder: string;
   onChange?: (e: any) => void;
-  value: string;
+  value?: string;
   styles?: any;
   placeholderColor?: string;
   keyboardType?: KeyboardType;

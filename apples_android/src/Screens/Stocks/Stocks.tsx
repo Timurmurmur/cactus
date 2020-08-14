@@ -7,8 +7,11 @@ import { commonstyles } from '../../common/styles';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import { HeaderStyles } from '../../Components/Header/StackHeader';
+import { Navigation } from '../../common/types';
 
-export interface IStocksProps {}
+export interface IStocksProps {
+  navigation: Navigation;
+}
 interface IStocksState {}
 
 export class Stocks extends React.Component<IStocksProps, IStocksState> {
@@ -21,14 +24,14 @@ export class Stocks extends React.Component<IStocksProps, IStocksState> {
   render() {
     return(
     <View>
-    <View style={[HeaderStyles.wrapper, { paddingHorizontal: 16 }]}>
+    {/* <View style={[HeaderStyles.wrapper, { paddingHorizontal: 16 }]}>
       <View style={{ flex: 1, maxWidth: 35, marginRight: 20, zIndex: 30 }}>
         <Ionicons.Button name="ios-menu" size={40} iconStyle={{ color: '#000', marginRight: -5}} backgroundColor="transparent" underlayColor={COLOR.TINT_COLOR} onPress={(e) => {this.props.navigation.openDrawer()}}/>
       </View>
       <View style={{flex: 5}}>
           <Text style={{ fontSize: 19, color: COLOR.BLACK, fontWeight: 'regular', letterSpacing: .5}}>АКЦИИ</Text>
       </View>
-    </View>
+    </View> */}
       <ScrollView style={{backgroundColor: '#F7F7F7'}}>
         <View style={{padding: 16}}>
           <View onTouchStart={e => this.props.navigation.navigate('MainNavigation', { screen: 'CurrentStock' })} style={[commonstyles.shadow,{backgroundColor: COLOR.WHITE, borderRadius: 2,overflow: 'hidden', marginBottom: 16}]}>

@@ -326,7 +326,8 @@ class MaterialTopTab extends React.Component {
         }
       }} initialLayout={{width: Dimensions.get('window').width }}>
         <TopTabNavigator.Screen name="Stocks" component={Stocks} options={{
-          title: 'Акции'
+          title: 'Акции',
+          back: false
         }}/>
         <TopTabNavigator.Screen name="Gift" component={Gift} options={{
           title: 'Подарки'
