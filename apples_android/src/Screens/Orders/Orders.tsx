@@ -72,7 +72,7 @@ export class Orders extends React.Component<IOrdersProps, IOrdersState> {
                     </View>
                     <View style={{padding: 20, alignItems: 'flex-end', justifyContent: 'center'}}>
                         <TouchableHighlight underlayColor={COLOR.WHITE} onPress={e => this.props.navigation.navigate('MainNavigation', { screen: 'CurrentOrder' })} >
-                          <Text style={{textTransform: 'uppercase', color: COLOR.LIGHT_GREEN}}>Подробнее</Text>
+                          <Text style={{textTransform: 'uppercase', color: COLOR.TINT_COLOR}}>Подробнее</Text>
                         </TouchableHighlight>
                     </View>
                   </View>

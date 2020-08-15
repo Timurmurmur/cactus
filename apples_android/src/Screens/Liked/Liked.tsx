@@ -47,7 +47,7 @@ export class Liked extends React.Component<ILikedProps, ILikedState> {
               <Text style={{textAlign: 'center', color: COLOR.TEXT_GRAY}}>Похоже в этом списке нет товаров. Самое время это исправить и добавить несколько крутых гаджетов!</Text>
             </View>
             <View style={{width: '100%', marginTop: 150, paddingHorizontal: 16}}>
-              <Button styles={{backgroundColor: COLOR.GREEN}} title={'ПЕРЕЙТИ В КАТАЛОГ'} textStyle={{color: COLOR.WHITE}}></Button>
+              <Button styles={{backgroundColor: COLOR.TINT_COLOR}} title={'ПЕРЕЙТИ В КАТАЛОГ'} textStyle={{color: COLOR.WHITE}}></Button>
             </View>
           </View> }
         </ScrollView>

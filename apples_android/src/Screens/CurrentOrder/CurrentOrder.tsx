@@ -59,7 +59,7 @@ export class CurrentOrder extends React.Component{
             <Text style={{fontSize: 12, color: COLOR.TEXT_GRAY}}>Наличными при получении</Text>
           </View>
           <View style={{marginVertical: 20}}>
-            <Button title="Отменить заказ" styles={{backgroundColor: COLOR.GREEN, marginHorizontal: 20}} textStyle={{textTransform: 'uppercase', color: COLOR.WHITE}}></Button>
+            <Button title="Отменить заказ" styles={{backgroundColor: COLOR.TINT_COLOR, marginHorizontal: 20}} textStyle={{textTransform: 'uppercase', color: COLOR.WHITE}}></Button>
           </View>
         </View>
       </ScrollView>

@@ -65,7 +65,7 @@ export class Decoration extends React.Component<IDecorationProps, IDecorationSta
     <ScrollView style={{maxHeight: '100%'}}>
       <View style={[HeaderStyles.wrapper]}>
         <View style={{ flex: 1, maxWidth: 35, marginRight: 20, zIndex: 30 }}>
-          <AntDesign.Button name="arrowleft" size={30} iconStyle={{ color: COLOR.WHITE, marginRight: -5}} backgroundColor="transparent" underlayColor={COLOR.GREEN} onPress={(e) => this.props.navigation.goBack()}/>
+          <AntDesign.Button name="arrowleft" size={30} iconStyle={{ color: COLOR.WHITE, marginRight: -5}} backgroundColor="transparent" underlayColor={COLOR.TINT_COLOR} onPress={(e) => this.props.navigation.goBack()}/>
         </View>
         <View style={{flex: 5}}>
           <Text style={{ fontSize: 19, color: COLOR.WHITE, fontFamily: 'Roboto-Medium', letterSpacing: .5}}>{this.props.route.params.title}</Text>
@@ -86,7 +86,7 @@ export class Decoration extends React.Component<IDecorationProps, IDecorationSta
         <DropDown height={272} title="Ваши данные*" subtitle={`${name === '' ? "Имя и фамилия" : name}, ${phone === '' ? 'номер телефона' : phone}`} count={1}>
           <View style={{marginTop: 20}}>
             <View>
-              <Button title="Войти" disabled={false} styles={{backgroundColor: COLOR.GREEN}} textStyle={{fontSize: 14, textTransform: 'uppercase', fontFamily: 'Roboto-Medium', color: COLOR.WHITE}}/>
+              <Button title="Войти" disabled={false} styles={{backgroundColor: COLOR.TINT_COLOR}} textStyle={{fontSize: 14, textTransform: 'uppercase', fontFamily: 'Roboto-Medium', color: COLOR.WHITE}}/>
             </View>
             <View style={{marginTop: 12, marginBottom: 20}}>
               <Text style={{textAlign: 'center', fontSize: 12, color: COLOR.TEXT_GRAY}}>или стать новым пользователем</Text>
@@ -108,7 +108,7 @@ export class Decoration extends React.Component<IDecorationProps, IDecorationSta
               <Text style={{color: COLOR.TEXT_GRAY, fontSize: 12 }}>Я уверен в заказе</Text>
             </View>
             <View>
-              <Switch value={true} trackColor={{ true: 'rgba(52, 198, 120, .5);', false: COLOR.TEXT_GRAY }} thumbColor={`${true ? COLOR.LIGHT_GREEN: COLOR.WHITE}`}></Switch>
+              <Switch value={true} trackColor={{ true: 'rgba(52, 198, 120, .5);', false: COLOR.TEXT_GRAY }} thumbColor={`${true ? COLOR.TINT_COLOR: COLOR.WHITE}`}></Switch>
             </View>
           </View>
         </View>
@@ -159,8 +159,8 @@ class Payment extends React.Component<any,{radio: string | undefined}> {
             return(
               <View key={index} style={{width: '100%', marginBottom: 30}} onTouchStart={e => this.radioHandler(el)}>
                 <View style={{flexDirection: 'row', alignItems: 'center', position: 'relative', }}>
-                  <View style={{width: 20, height: 20, borderWidth: 1, borderColor: `${radio === el ? COLOR.LIGHT_GREEN : COLOR.TEXT_GRAY}`, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 20}}>
-                    { radio === el ? <View style={{width: 10, height: 10, borderRadius: 50, backgroundColor: COLOR.LIGHT_GREEN}}></View> : null }
+                  <View style={{width: 20, height: 20, borderWidth: 1, borderColor: `${radio === el ? COLOR.TINT_COLOR : COLOR.TEXT_GRAY}`, borderRadius: 50, justifyContent: 'center', alignItems: 'center', marginRight: 20}}>
+                    { radio === el ? <View style={{width: 10, height: 10, borderRadius: 50, backgroundColor: COLOR.TINT_COLOR}}></View> : null }
                   </View>
                   <Text style={{fontSize: 16, width: '80%'}}>{el}</Text>
                   { index == paymentList.length - 1 ? <View style={{position: 'absolute', right: 0}}><AntDesign color={COLOR.TEXT_GRAY} name="right" size={19}/></View> : null}
@@ -246,7 +246,7 @@ class Delivery extends React.Component<{navigation: Navigation,},{checkbox: bool
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
             <Text style={{fontSize: 16, }}>Я получатель</Text>
-            <Switch trackColor={{ true: 'rgba(52, 198, 120, .5)', false: COLOR.TEXT_GRAY }} thumbColor={`${checkbox ? COLOR.LIGHT_GREEN : COLOR.WHITE }`} onValueChange={this.checkboxHandler} value={checkbox} />
+            <Switch trackColor={{ true: 'rgba(52, 198, 120, .5)', false: COLOR.TEXT_GRAY }} thumbColor={`${checkbox ? COLOR.TINT_COLOR : COLOR.WHITE }`} onValueChange={this.checkboxHandler} value={checkbox} />
           </View>
           { checkbox ? null : 
             <>
@@ -347,7 +347,7 @@ export class DropDown extends React.Component<IDropDownProps, IDropDownState> {
       <View style={[{padding: 16, flexDirection: 'column', marginBottom: 16, borderRadius: 2 }, commonstyles.shadow,]}>
       <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <View style={{width: 24, height: 24, backgroundColor: COLOR.LIGHT_GREEN, borderRadius: 50, justifyContent: 'center', alignItems: 'center'}}><Text style={{color: COLOR.WHITE, fontSize: 14, fontWeight: 'bold'}}>{count}</Text></View>
+          <View style={{width: 24, height: 24, backgroundColor: COLOR.TINT_COLOR, borderRadius: 50, justifyContent: 'center', alignItems: 'center'}}><Text style={{color: COLOR.WHITE, fontSize: 14, fontWeight: 'bold'}}>{count}</Text></View>
           <View style={{marginLeft: 10}}>
           <Text style={{fontFamily: 'Roboto-Medium', fontSize: 16, color: COLOR.BLACK}}>{title}</Text>
             <Text style={{fontSize: 12, color: COLOR.TEXT_GRAY}}>{subtitle}</Text>
